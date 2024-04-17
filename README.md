@@ -8,7 +8,7 @@ The accumulation of large-scale genome sequencing datasets and electronic medica
 We present Multi-level PheWAS (MLPheWAS), a user-friendly and highly effective framework automating variant-, gene-, and pathway-level burden  tests , PheWAS, and principal component analysis (PCA) for population-specific associations   using common and rare variants as well as user-defined covariates. 
 
 ### Flowchart
-<img src="/img/gitlab-flowchart.png"  width="1000" height="500">
+<img src="gitlab-flowchart.png"  width="1000" height="500">
 
 MLPheWAS reads genotypes, phenotypes, gene-variant pairs as input for conducting variant-, gene- and pathway level phenome-wide association analysis by simply leveraging the variant set file. It runs PCA prior to the PheWAS to generate principal components as covariates in running phewas to control the population stratification. Moreover，it supports any other covariates defined by users as well. A high resolution plot in PDF format will be generated for quick displaying the top association other than the raw results table. Meanwhile, it's flexible for extending usages by senior users as SKAT and PheWAS functions are fully retained in MLPheWAS.  
 ## Installation for dependencies
