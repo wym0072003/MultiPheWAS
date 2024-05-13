@@ -71,6 +71,7 @@ outneed<-data.frame();
 for (i in 2:ncol(phenotypes)){ 
   needcases<-phenotypes[phenotypes[,i]==TRUE,c(1,i)]
   controls<-phenotypes[phenotypes[,i]==FALSE,c(1,i)]
+  set.seed(99)
   if(nrow(controls)<(nrow(needcases)*5)){needcontrols=controls} #!Ratio of cases to controls.
   else{ needcontrols<-controls[controls$id%in%sample(controls$id,size=nrow(needcases)*5,replace = F),]} #!Ratio of cases to controls.
   #Agjusting the number in "(needcases)*5" in above 2 lines for the ratio of cases to controls. Eg. here 5 means the ratio of cases to controls is 1:5.
